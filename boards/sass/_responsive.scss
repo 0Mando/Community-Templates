@@ -1,0 +1,97 @@
+@include media-md {
+    // body{
+    //     background-color: #4d3d3d;
+    // }
+
+    .board{
+
+        &__item{
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 15px;
+        }
+
+        &__about-channel{
+            &__link{
+                display: none;
+            }
+
+            border-bottom: 2px solid #ccc;
+        }
+
+        &__more-information{
+            display: block;
+
+            &__item{
+                label{
+                    color: #858c9d;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &__btn-i{
+            margin-top: 50px;
+            display: block;
+            width: 100%;
+            border: none;
+            background-color: $main;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        &___stadistics{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 40px;
+            margin-bottom: -20px;
+        }
+    }
+}
+
+@include media-lg{
+    body{
+        // background-color: #858c9d;
+    }
+
+    .board{
+        &__item{
+            display: flex;
+        }
+
+        &__about-channel{
+            width: 50%;
+            padding-right: 20px;
+            margin-right: 10px;
+            border-bottom: none;
+            border-right: 2px solid #ccc;
+        }
+
+        &__more-information{
+            display: block;
+            width: 50%;
+            &__item{
+                margin-top: 20px;
+                label{
+                    color: #858c9d;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
