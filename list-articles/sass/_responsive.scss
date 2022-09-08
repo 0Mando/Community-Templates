@@ -1,0 +1,48 @@
+@include media-md {
+    body{
+        background-color: #473e3e;
+    }
+
+    .list-articles{
+
+        &__card{
+
+            &__btn-interacction{
+                display: flex;
+                flex-direction: column;
+                margin-top: 2.2rem;
+                padding: 0 1rem;
+            }
+
+            &__header{
+
+                &__btn-interacction{
+                    display: none;
+                }
+
+                &__user{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .btn-interacction-btn{
+        display: none;
+    }
+}
+
+@include media-lg{
+    body{
+        background-color: #585858;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .speakers{
+        display: block;
+    }
+}

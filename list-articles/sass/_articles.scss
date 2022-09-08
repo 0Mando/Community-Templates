@@ -1,0 +1,136 @@
+.title-page{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    h2{
+        font-size: 2rem;
+    }
+}
+
+.list-articles{
+
+    &__card{
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        display: flex;
+        max-width: 800px;
+
+        &__btn-interacction{
+            display: none;
+        }
+
+        &__content{
+            padding: 1rem;
+        }
+
+        &__header{
+            display: flex;
+            padding: 0.2rem 0.5rem 0.8rem;
+            border-bottom: 2px solid #ccc;
+            align-items: flex-start;
+
+            &__btn-interacction{
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__user{
+                display: flex;
+                // border: 1px solid red;
+                margin-left: auto;
+            }
+
+            &__user-profile{
+                border-radius: 50%;
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 1.5rem;
+            }
+
+
+            &__user-post-information{
+                label{
+                    color: #888888;
+                }
+            }
+        }
+
+        &__body{
+            margin-top: 1rem;
+
+            h4{
+                line-height: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            a{
+                display: block;
+                margin-top: 1rem;
+                color: black;
+            }
+        }
+    }
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// TODO: Ajustar tamaño de flechas en versión móvil
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.btn-arrow-up{
+    background: none;
+    border: none;
+    color: #ccc;
+
+    &__positive{
+        color: #0195ff;
+        background: none;
+        border: none;
+    }
+}
+
+.btn-arrow-down{
+    background: none;
+    border: none;
+    color: #ccc;
+
+    &__negative{
+        background: none;
+        border: none;
+        color: red;
+    }
+}
+
+.btn-interacction-label{
+    text-align: center;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.btn-interacction-btn{
+    background: none;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+// TODO: Sección de spekears versión desktop
+.speakers{
+    display: none;
+
+    &__item{
+        display: flex;
+        border: 1px solid black;
+
+        &__profile{
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 30px;
+        }
+
+        &__username{
+            border: 1px solid black;
+        }
+    }
+}
