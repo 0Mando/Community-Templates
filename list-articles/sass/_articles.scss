@@ -7,17 +7,21 @@
 
     &__header{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     &__title{
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         font-size: 2rem;
     }
 
     &__create-post{
-        margin-top: 2rem;
+        display: block;
+        width: auto;
+        margin-left: auto;
+        margin-top: .5rem;
         margin-bottom: 2rem;
         background-color: black;
         color: white;
