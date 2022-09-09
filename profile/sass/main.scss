@@ -1,0 +1,17 @@
+@import 'profile', 'resume', 'icons', 'responsive';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.banner{
+    height: 30vh;
+    background-image: url('../assets/Background/Background_1.png');
+    background-size: cover;
+}
+
+.fa-check{
+    font-size: 1.1rem;
+    color: white;
+}
