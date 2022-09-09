@@ -1,0 +1,24 @@
+@include media-md {
+
+    body{
+        overflow: hidden;
+    }
+}
+
+@include media-lg{
+
+    body{
+        overflow: hidden;
+    }
+
+    main{
+        display: flex;
+    }
+
+    .bg-img{
+        &__developers{
+            display: block;
+            height: 100vh;
+        }
+    }
+}
